@@ -1,0 +1,196 @@
+/* styles.css */
+* {
+  overflow-x: hidden;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to right, rgb(206, 209, 216), #a5c4c9);
+}
+
+header {
+  background: linear-gradient(to right, rgb(159, 170, 195), #5d8e97);
+  color: linear-gradient(to right, rgb(159, 170, 195), #5d8e97);
+  height: 12vh;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 0 20px;
+}
+
+nav a {
+  color: linear-gradient(to right, rgb(159, 170, 195), #5d8e97);
+  text-decoration: none;
+  font-size: 18px;
+  border: 1px solid rgb(110, 110, 78);
+  background-color: rgb(204, 184, 97);
+  padding: 10px;
+  border-radius: 50px;
+}
+nav a:hover {
+  background: linear-gradient(to right, rgb(159, 170, 195), #5d8e97);
+  box-shadow: 5px 5px 10px rgb(204, 184, 97);
+}
+
+.logo img {
+  width: 40px;
+}
+
+main {
+  padding: 20px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: linear-gradient(to right, rgb(159, 170, 195), #5d8e97);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgb(204, 184, 97);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#searchButton {
+  background-color: rgb(233, 225, 188);
+}
+#searchButton img {
+  width: 20px;
+}
+
+button:hover {
+  background-color: rgb(52, 73, 52);
+  color: white;
+}
+#searchButton:hover {
+  background: linear-gradient(to right, rgb(159, 170, 195), #5d8e97);
+  box-shadow: 5px 5px 10px rgb(204, 184, 97);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.country-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, rgb(159, 170, 195), #5d8e97);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+}
+.country-card img {
+  width: 100px;
+  position: relative;
+  top: 7px;
+}
+
+.country-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 10px rgb(204, 184, 97);
+}
+span {
+  color: rgb(9, 63, 38);
+  font-weight: bolder;
+  font-size: 20px;
+}
+.details-button {
+  margin-top: 20px;
+  width: 150px;
+}
+footer {
+  position: relative;
+  background: linear-gradient(to right, rgb(159, 170, 195), #5d8e97);
+  color: rgb(30, 29, 29);
+  padding: 20px 0;
+  text-align: center;
+  bottom: 2;
+  margin-top: auto;
+
+  text-align: center;
+}
+footer p {
+  font-size: 20px;
+  color: linear-gradient(to right, rgb(159, 170, 195), #5d8e97);
+}
+
+.additional-details-container {
+  position: fixed;
+  top: 170px;
+  right: -100%;
+  bottom: 0;
+  width: 80%;
+  height: 60vh;
+  text-align: center;
+  max-width: 500px;
+  background: linear-gradient(to right, rgb(159, 170, 195), #5d8e97);
+  color: white;
+  box-shadow: 10px 10px 10px rgb(204, 184, 97);
+  overflow-y: auto;
+  transition: right 2s ease;
+  z-index: 1000;
+  border-radius: 30%;
+}
+
+.show-additional-details {
+  right: 30vw;
+}
+.adContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.inner-adContainer {
+  align-items: center;
+  margin: 10px;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin-bottom: 10px;
+  }
+
+  .search-container {
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    margin-bottom: 10px;
+  }
+}

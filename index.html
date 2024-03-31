@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyCaster</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Images/disaster.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="Images/disaster.png" alt="" />
+          <span>SkyCaster</span>
+        </div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+      </nav>
+    </header>
+    <main>
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Enter country name....."
+        />
+        <button id="searchButton">
+          <img src="Images/review.png" alt="" />
+        </button>
+      </div>
+      <div id="countryData" class="grid-container">
+        <!-- Country Data Display -->
+      </div>
+    </main>
+    <footer>
+      <p>All rights reserved to&copy;Sanjidul Alam Chowdhury</p>
+    </footer>
+
+    <div
+      id="additionalDetailsContainer"
+      class="additional-details-container"
+    ></div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
